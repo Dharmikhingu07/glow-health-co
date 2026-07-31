@@ -1,0 +1,161 @@
+import {
+  ShieldCheck,
+  Clock4,
+  HeartHandshake,
+  BadgeIndianRupee,
+  type LucideIcon,
+} from "lucide-react";
+
+export type Stat = { label: string; value: number; suffix: string };
+
+export const stats: Stat[] = [
+  { label: "Patients treated", value: 14000, suffix: "+" },
+  { label: "Years of experience", value: 12, suffix: "+" },
+  { label: "Consultations delivered", value: 42000, suffix: "+" },
+  { label: "Patient satisfaction", value: 98, suffix: "%" },
+];
+
+export type Reason = { title: string; description: string; icon: LucideIcon };
+
+export const reasons: Reason[] = [
+  {
+    title: "Evidence-based care",
+    description:
+      "Every prescription follows current clinical guidelines. No unnecessary antibiotics, no unnecessary tests.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "On-time appointments",
+    description:
+      "Slots are capped daily so consultations start close to schedule and never feel rushed.",
+    icon: Clock4,
+  },
+  {
+    title: "One doctor, continuous care",
+    description:
+      "You see Dr. Sharma every visit, so your history is known and your treatment stays consistent.",
+    icon: HeartHandshake,
+  },
+  {
+    title: "Transparent pricing",
+    description:
+      "Consultation fees are published upfront, with no hidden charges for follow-ups within 7 days.",
+    icon: BadgeIndianRupee,
+  },
+];
+
+export type Testimonial = {
+  name: string;
+  role: string;
+  quote: string;
+  rating: number;
+};
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "Ananya Deshpande",
+    role: "Patient since 2019",
+    quote:
+      "Dr. Sharma spent twenty minutes explaining my thyroid reports instead of handing me a prescription and moving on. I have never felt rushed at this clinic.",
+    rating: 5,
+  },
+  {
+    name: "Mahesh Iyer",
+    role: "Diabetes care",
+    quote:
+      "My HbA1c dropped from 9.1 to 6.4 in a year. The diet plan was built around what my family actually cooks, which made it possible to stick to.",
+    rating: 5,
+  },
+  {
+    name: "Farah Qureshi",
+    role: "Teleconsultation patient",
+    quote:
+      "I booked a video consult at 9pm for my son's fever and had a prescription in ten minutes. Follow-up call the next morning came without me asking.",
+    rating: 5,
+  },
+  {
+    name: "Ramesh Nair",
+    role: "Elderly care, age 74",
+    quote:
+      "He reduced my medicines from nine tablets to five and wrote the schedule on a chart for me. My blood pressure has been steady ever since.",
+    rating: 5,
+  },
+  {
+    name: "Priya Menon",
+    role: "Preventive checkup",
+    quote:
+      "The annual checkup caught early anaemia I had no symptoms of. Clear explanation, sensible treatment, no scare tactics or extra packages sold.",
+    rating: 5,
+  },
+];
+
+export type Faq = { question: string; answer: string };
+
+export const faqs: Faq[] = [
+  {
+    question: "Do I need an appointment, or can I walk in?",
+    answer:
+      "Walk-ins are welcome during clinic hours, but booked appointments are always seen first. Booking online takes under a minute and guarantees a specific time slot.",
+  },
+  {
+    question: "What is the consultation fee?",
+    answer:
+      "An in-clinic consultation is ₹600 and a teleconsultation is ₹400. Follow-up visits within 7 days for the same complaint are free of charge.",
+  },
+  {
+    question: "Do you offer online or video consultations?",
+    answer:
+      "Yes. Teleconsultations are available every day, including Sunday mornings. You will receive a secure video link and a digital prescription after the call.",
+  },
+  {
+    question: "Which conditions should I see a General Physician for?",
+    answer:
+      "Fever, infections, fatigue, digestive problems, blood pressure, diabetes, respiratory issues and general health concerns. If specialist care is needed, you will be referred with a full summary.",
+  },
+  {
+    question: "How long does a consultation take?",
+    answer:
+      "First consultations are scheduled for 20 minutes and follow-ups for 10 to 15 minutes. Complex or chronic reviews are given a longer slot on request.",
+  },
+  {
+    question: "Do you accept health insurance or cashless claims?",
+    answer:
+      "Outpatient consultations are self-pay, and a detailed invoice is provided for reimbursement. We assist with paperwork for insurers that cover OPD benefits.",
+  },
+  {
+    question: "Can I get my reports reviewed without a new consultation?",
+    answer:
+      "Yes. Report reviews can be done over a short teleconsultation, which is particularly convenient for annual checkups and routine blood work.",
+  },
+];
+
+export const values = [
+  {
+    title: "Listen first",
+    description:
+      "Diagnosis begins with the story. Consultations are built around unhurried conversation, not a checklist.",
+  },
+  {
+    title: "Treat conservatively",
+    description:
+      "The simplest safe treatment wins. Tests and medicines are ordered only when they change the outcome.",
+  },
+  {
+    title: "Explain everything",
+    description:
+      "You leave knowing what you have, why it happened, what the plan is, and what warning signs to watch for.",
+  },
+  {
+    title: "Stay reachable",
+    description:
+      "Questions after the visit are part of the care. Message the clinic and you will get a reply the same day.",
+  },
+];
+
+export const milestones = [
+  { year: "2013", text: "Completed MBBS and internal medicine residency; began work in municipal hospitals." },
+  { year: "2016", text: "Led a community diabetes screening programme across four wards in Mumbai." },
+  { year: "2019", text: "Opened Medira Clinic in Bandra West as a single-doctor, unhurried primary care practice." },
+  { year: "2021", text: "Added teleconsultation and home medication reviews for elderly patients." },
+  { year: "2025", text: "Crossed 14,000 patients treated, with a 98% satisfaction rating." },
+];
