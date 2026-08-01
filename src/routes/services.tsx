@@ -6,7 +6,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { ButtonLink } from "@/components/Button";
 import { services } from "@/data/services";
 
-const title = "Services — General Physician Care at Medira Clinic, Mumbai";
+const title = "Services — General Physician Care at Medira Clinic, Surat";
 const description =
   "Twelve primary care services including general consultation, fever and infection treatment, diabetes and blood pressure management, preventive checkups and teleconsultation.";
 

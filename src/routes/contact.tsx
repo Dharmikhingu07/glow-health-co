@@ -13,7 +13,7 @@ import { telHref } from "@/utils/format";
 
 const title = "Contact Medira Clinic — Address, Phone & Clinic Hours";
 const description =
-  "Reach Medira Clinic in Bandra West, Mumbai. Phone, email, WhatsApp, clinic timings and a message form for non-urgent questions.";
+  "Reach Medira Clinic in Adajan, Surat. Phone, email, WhatsApp, clinic timings and a message form for non-urgent questions.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
