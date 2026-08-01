@@ -5,9 +5,10 @@ import { PageTransition } from "@/components/PageTransition";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { ButtonLink } from "@/components/Button";
 import { clinic, doctor } from "@/data/doctor";
-import { milestones, values } from "@/data/content";
+import { milestones, values, facilities, testimonials } from "@/data/content";
 import { fadeUp } from "@/utils/motion";
 
 const title = "About Medira Clinic — Unhurried Primary Care in Adajan";
