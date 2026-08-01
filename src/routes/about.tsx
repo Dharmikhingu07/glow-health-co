@@ -5,9 +5,10 @@ import { PageTransition } from "@/components/PageTransition";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { ButtonLink } from "@/components/Button";
 import { clinic, doctor } from "@/data/doctor";
-import { milestones, values } from "@/data/content";
+import { milestones, values, facilities, testimonials } from "@/data/content";
 import { fadeUp } from "@/utils/motion";
 
 const title = "About Medira Clinic — Unhurried Primary Care in Adajan";
@@ -104,6 +105,52 @@ function AboutPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <section className="container-page py-20 lg:py-24">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center">
+          <SectionTitle
+            align="left"
+            eyebrow="The clinic"
+            title="Small space, everything you need"
+            description="Medira Clinic is deliberately compact — one consulting room, one doctor, and the equipment required to settle most primary care questions in a single visit."
+          />
+          <AnimatedSection as="div" className="grid gap-3 sm:grid-cols-2">
+            {facilities.map((item) => (
+              <motion.p
+                key={item}
+                variants={fadeUp}
+                className="flex items-start gap-3 rounded-2xl border border-border/70 bg-card p-4 text-sm leading-relaxed text-muted-foreground shadow-soft"
+              >
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-secondary" aria-hidden="true" />
+                {item}
+              </motion.p>
+            ))}
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="bg-surface py-20 lg:py-24">
+        <div className="container-page">
+          <SectionTitle
+            eyebrow="Patients"
+            title="What people say about the clinic"
+            description="A few words from patients treated at Medira Clinic in Adajan."
+          />
+          <div className="mt-12">
+            <TestimonialCarousel items={testimonials} />
+          </div>
+          <div className="mt-12 flex flex-col items-center gap-4 text-center">
+            <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
+              New to the clinic? A first consultation runs for a full 20 minutes so there is time
+              to cover everything.
+            </p>
+            <ButtonLink to="/appointment" size="lg">
+              Book an appointment
+            </ButtonLink>
+          </div>
+        </div>
+      </section>
     </PageTransition>
+
   );
 }

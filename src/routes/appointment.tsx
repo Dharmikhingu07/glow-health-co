@@ -8,8 +8,10 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import { services } from "@/data/services";
 import { clinic, doctor } from "@/data/doctor";
+import { visitSteps, faqs } from "@/data/content";
 import { telHref } from "@/utils/format";
 
 const title = "Book an Appointment — Medira Clinic, Dr. Rohan Kasariya MBBS";
@@ -230,7 +232,40 @@ function AppointmentPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <section className="bg-surface py-16 lg:py-24">
+        <div className="container-page">
+          <SectionTitle
+            eyebrow="How it works"
+            title="From request to follow-up"
+            description="Booking takes a minute, and the clinic handles the rest."
+          />
+          <AnimatedSection as="div" className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {visitSteps.map((step, index) => (
+              <Card key={step.title} className="flex h-full flex-col gap-3">
+                <span className="flex size-11 items-center justify-center rounded-2xl bg-primary-soft font-display text-base font-semibold text-primary">
+                  {index + 1}
+                </span>
+                <h3 className="text-base font-semibold">{step.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>
+              </Card>
+            ))}
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="container-page py-16 lg:py-24">
+        <SectionTitle
+          eyebrow="FAQ"
+          title="Booking questions"
+          description="What to expect around scheduling, fees and cancellations."
+        />
+        <div className="mx-auto mt-12 max-w-3xl">
+          <FaqAccordion items={faqs} />
+        </div>
+      </section>
     </PageTransition>
+
   );
 }
 

@@ -8,7 +8,9 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import { clinic, doctor } from "@/data/doctor";
+import { faqs } from "@/data/content";
 import { telHref } from "@/utils/format";
 
 const title = "Contact Medira Clinic — Address, Phone & Clinic Hours";
@@ -126,9 +128,16 @@ function ContactPage() {
               </dl>
             </Card>
 
-            <div className="flex h-56 items-center justify-center rounded-3xl border border-dashed border-border bg-surface text-sm text-muted-foreground">
-              Map of {clinic.addressLine2} (placeholder)
+            <div className="overflow-hidden rounded-3xl border border-border/70 shadow-soft">
+              <iframe
+                title={`Map showing ${clinic.name} in ${clinic.addressLine2}`}
+                src="https://www.google.com/maps?q=Adajan,+Surat,+Gujarat+395009&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-64 w-full border-0"
+              />
             </div>
+
           </AnimatedSection>
 
           <AnimatedSection as="div">
@@ -160,7 +169,21 @@ function ContactPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <section className="bg-surface py-16 lg:py-24">
+        <div className="container-page">
+          <SectionTitle
+            eyebrow="FAQ"
+            title="Before you get in touch"
+            description="Quick answers to the questions the clinic receives most."
+          />
+          <div className="mx-auto mt-12 max-w-3xl">
+            <FaqAccordion items={faqs} />
+          </div>
+        </div>
+      </section>
     </PageTransition>
+
   );
 }
 

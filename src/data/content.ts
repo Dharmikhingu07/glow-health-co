@@ -158,3 +158,59 @@ export const milestones = [
   { year: "2024", text: "Opened Medira Clinic in Adajan as a single-doctor, unhurried primary care practice." },
   { year: "2025", text: "Crossed 1,500 patients treated and introduced Sunday morning teleconsultations." },
 ];
+
+export type Step = { title: string; description: string };
+
+export const visitSteps: Step[] = [
+  {
+    title: "Book your slot",
+    description:
+      "Request a time online or by phone. The clinic confirms by call within an hour during working hours.",
+  },
+  {
+    title: "Consultation",
+    description:
+      "A 20-minute unhurried consultation: history, examination, and a diagnosis explained in plain language.",
+  },
+  {
+    title: "Plan & prescription",
+    description:
+      "You leave with a written plan, a conservative prescription, and clear warning signs to watch for.",
+  },
+  {
+    title: "Follow-up",
+    description:
+      "A follow-up within 7 days is free. Reports can be reviewed over a short teleconsultation.",
+  },
+];
+
+export type PriceItem = { item: string; price: string; note: string };
+
+export const pricing: PriceItem[] = [
+  { item: "General consultation", price: "₹600", note: "20 minutes, in-clinic" },
+  { item: "Teleconsultation", price: "₹400", note: "Video or phone, 15 minutes" },
+  { item: "Follow-up within 7 days", price: "Free", note: "Same complaint" },
+  { item: "Preventive health checkup", price: "₹1,200", note: "Consultation + report review" },
+  { item: "Chronic care review", price: "₹500", note: "Diabetes / blood pressure, quarterly" },
+  { item: "Home visit (Adajan area)", price: "₹1,500", note: "Subject to availability" },
+];
+
+export const facilities = [
+  "Air-conditioned waiting area with 8 seats",
+  "On-site point-of-care testing (sugar, BP, SpO2, ECG)",
+  "Digital prescriptions and records",
+  "Wheelchair-accessible entrance",
+  "Sample collection tie-up with a NABL lab",
+  "UPI, card and cash payments accepted",
+];
+
+export const expertiseAreas = [
+  "Fever, flu and seasonal infections",
+  "Type 2 diabetes and pre-diabetes",
+  "Hypertension and cardiovascular risk",
+  "Thyroid and lipid disorders",
+  "Asthma and chronic cough",
+  "Digestive and acidity complaints",
+  "Preventive health screening",
+  "Elderly medication review",
+];
