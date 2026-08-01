@@ -13,7 +13,7 @@ import { fadeUp } from "@/utils/motion";
 
 const title = `${doctor.name}, MBBS General Physician — Profile & Timings`;
 const description =
-  "Profile of Dr. Raj Sharma, MBBS General Physician with 12+ years of experience: registration details, languages, biography, working hours and consultation fees.";
+  "Profile of Dr. Rohan Kasariya, MBBS General Physician with 2+ years of experience: registration details, languages, biography, working hours and consultation fees.";
 
 export const Route = createFileRoute("/doctors")({
   head: () => ({
@@ -38,8 +38,8 @@ export const Route = createFileRoute("/doctors")({
           address: {
             "@type": "PostalAddress",
             streetAddress: clinic.addressLine1,
-            addressLocality: "Mumbai",
-            postalCode: "400050",
+            addressLocality: "Surat",
+            postalCode: "395009",
             addressCountry: "IN",
           },
         }),

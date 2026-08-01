@@ -12,9 +12,9 @@ import { services } from "@/data/services";
 import { clinic, doctor } from "@/data/doctor";
 import { telHref } from "@/utils/format";
 
-const title = "Book an Appointment — Medira Clinic, Dr. Raj Sharma MBBS";
+const title = "Book an Appointment — Medira Clinic, Dr. Rohan Kasariya MBBS";
 const description =
-  "Request an in-clinic or video consultation with Dr. Raj Sharma, MBBS General Physician. Pick a service, date and time, and describe your symptoms.";
+  "Request an in-clinic or video consultation with Dr. Rohan Kasariya, MBBS General Physician. Pick a service, date and time, and describe your symptoms.";
 
 export const Route = createFileRoute("/appointment")({
   head: () => ({
