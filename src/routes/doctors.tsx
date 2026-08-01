@@ -6,8 +6,10 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
 import { ButtonLink } from "@/components/Button";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import doctorPortrait from "@/assets/doctor-portrait.jpg";
 import { clinic, doctor } from "@/data/doctor";
+import { expertiseAreas, testimonials } from "@/data/content";
 import { telHref } from "@/utils/format";
 import { fadeUp } from "@/utils/motion";
 
