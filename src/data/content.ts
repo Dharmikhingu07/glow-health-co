@@ -9,9 +9,9 @@ import {
 export type Stat = { label: string; value: number; suffix: string };
 
 export const stats: Stat[] = [
-  { label: "Patients treated", value: 14000, suffix: "+" },
-  { label: "Years of experience", value: 12, suffix: "+" },
-  { label: "Consultations delivered", value: 42000, suffix: "+" },
+  { label: "Patients treated", value: 1500, suffix: "+" },
+  { label: "Years of experience", value: 2, suffix: "+" },
+  { label: "Consultations delivered", value: 5000, suffix: "+" },
   { label: "Patient satisfaction", value: 98, suffix: "%" },
 ];
 
@@ -33,7 +33,7 @@ export const reasons: Reason[] = [
   {
     title: "One doctor, continuous care",
     description:
-      "You see Dr. Sharma every visit, so your history is known and your treatment stays consistent.",
+      "You see Dr. Kasariya every visit, so your history is known and your treatment stays consistent.",
     icon: HeartHandshake,
   },
   {
@@ -54,9 +54,9 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     name: "Ananya Deshpande",
-    role: "Patient since 2019",
+    role: "Patient since 2024",
     quote:
-      "Dr. Sharma spent twenty minutes explaining my thyroid reports instead of handing me a prescription and moving on. I have never felt rushed at this clinic.",
+      "Dr. Kasariya spent twenty minutes explaining my thyroid reports instead of handing me a prescription and moving on. I have never felt rushed at this clinic.",
     rating: 5,
   },
   {
@@ -153,9 +153,8 @@ export const values = [
 ];
 
 export const milestones = [
-  { year: "2013", text: "Completed MBBS and internal medicine residency; began work in municipal hospitals." },
-  { year: "2016", text: "Led a community diabetes screening programme across four wards in Mumbai." },
-  { year: "2019", text: "Opened Medira Clinic in Bandra West as a single-doctor, unhurried primary care practice." },
-  { year: "2021", text: "Added teleconsultation and home medication reviews for elderly patients." },
-  { year: "2025", text: "Crossed 14,000 patients treated, with a 98% satisfaction rating." },
+  { year: "2022", text: "Completed MBBS and began internship in municipal hospitals across Gujarat." },
+  { year: "2023", text: "Completed housemanship and joined a busy primary care centre in Surat." },
+  { year: "2024", text: "Opened Medira Clinic in Adajan as a single-doctor, unhurried primary care practice." },
+  { year: "2025", text: "Crossed 1,500 patients treated and introduced Sunday morning teleconsultations." },
 ];
