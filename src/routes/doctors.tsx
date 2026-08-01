@@ -172,7 +172,46 @@ function DoctorsPage() {
           </Card>
         </AnimatedSection>
       </section>
+
+      <section className="bg-surface py-16 lg:py-24">
+        <div className="container-page">
+          <SectionTitle
+            eyebrow="Areas of focus"
+            title="Conditions treated most often"
+            description="The everyday medicine that makes up a General Physician's practice."
+          />
+          <AnimatedSection as="div" className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {expertiseAreas.map((area) => (
+              <motion.p
+                key={area}
+                variants={fadeUp}
+                className="flex items-start gap-3 rounded-2xl border border-border/70 bg-card p-4 text-sm leading-relaxed text-muted-foreground shadow-soft"
+              >
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-secondary" aria-hidden="true" />
+                {area}
+              </motion.p>
+            ))}
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="container-page py-16 lg:py-24">
+        <SectionTitle
+          eyebrow="Patient stories"
+          title={`In their words, about ${doctor.name}`}
+          description="Reviews shared by patients after their consultations."
+        />
+        <div className="mt-12">
+          <TestimonialCarousel items={testimonials} />
+        </div>
+        <div className="mt-12 flex flex-col items-center gap-4 text-center">
+          <ButtonLink to="/appointment" size="lg">
+            Book with {doctor.name.split(" ")[1]}
+          </ButtonLink>
+        </div>
+      </section>
     </PageTransition>
+
   );
 }
 
