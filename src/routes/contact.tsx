@@ -8,7 +8,9 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import { clinic, doctor } from "@/data/doctor";
+import { faqs } from "@/data/content";
 import { telHref } from "@/utils/format";
 
 const title = "Contact Medira Clinic — Address, Phone & Clinic Hours";
