@@ -126,9 +126,16 @@ function ContactPage() {
               </dl>
             </Card>
 
-            <div className="flex h-56 items-center justify-center rounded-3xl border border-dashed border-border bg-surface text-sm text-muted-foreground">
-              Map of {clinic.addressLine2} (placeholder)
+            <div className="overflow-hidden rounded-3xl border border-border/70 shadow-soft">
+              <iframe
+                title={`Map showing ${clinic.name} in ${clinic.addressLine2}`}
+                src="https://www.google.com/maps?q=Adajan,+Surat,+Gujarat+395009&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-64 w-full border-0"
+              />
             </div>
+
           </AnimatedSection>
 
           <AnimatedSection as="div">
