@@ -8,8 +8,10 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/Button";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import { services } from "@/data/services";
 import { clinic, doctor } from "@/data/doctor";
+import { visitSteps, faqs } from "@/data/content";
 import { telHref } from "@/utils/format";
 
 const title = "Book an Appointment — Medira Clinic, Dr. Rohan Kasariya MBBS";
