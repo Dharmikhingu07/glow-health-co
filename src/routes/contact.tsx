@@ -167,7 +167,21 @@ function ContactPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <section className="bg-surface py-16 lg:py-24">
+        <div className="container-page">
+          <SectionTitle
+            eyebrow="FAQ"
+            title="Before you get in touch"
+            description="Quick answers to the questions the clinic receives most."
+          />
+          <div className="mx-auto mt-12 max-w-3xl">
+            <FaqAccordion items={faqs} />
+          </div>
+        </div>
+      </section>
     </PageTransition>
+
   );
 }
 
