@@ -80,11 +80,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Medira Clinic — Dr. Raj Sharma, MBBS General Physician" },
+      { title: "Medira Clinic — Dr. Rohan Kasariya, MBBS General Physician" },
       {
         name: "description",
         content:
-          "Unhurried primary care in Bandra West, Mumbai. Consultations, diabetes and blood pressure management, checkups and teleconsultation with Dr. Raj Sharma, MBBS.",
+          "Unhurried primary care in Adajan, Surat. Consultations, diabetes and blood pressure management, checkups and teleconsultation with Dr. Rohan Kasariya, MBBS.",
       },
       { name: "author", content: "Medira Clinic" },
       { property: "og:site_name", content: "Medira Clinic" },

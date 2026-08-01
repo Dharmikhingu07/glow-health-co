@@ -18,9 +18,9 @@ import { clinic, doctor } from "@/data/doctor";
 import { telHref } from "@/utils/format";
 import { fadeUp, floating, staggerContainer, viewportOnce } from "@/utils/motion";
 
-const title = "Medira Clinic — Dr. Raj Sharma, MBBS General Physician in Mumbai";
+const title = "Medira Clinic — Dr. Rohan Kasariya, MBBS General Physician in Surat";
 const description =
-  "Book an unhurried consultation with Dr. Raj Sharma, MBBS General Physician. Fever and infection care, diabetes and blood pressure management, checkups and teleconsultation in Bandra West.";
+  "Book an unhurried consultation with Dr. Rohan Kasariya, MBBS General Physician. Fever and infection care, diabetes and blood pressure management, checkups and teleconsultation in Adajan.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -43,8 +43,8 @@ export const Route = createFileRoute("/")({
           address: {
             "@type": "PostalAddress",
             streetAddress: clinic.addressLine1,
-            addressLocality: "Mumbai",
-            postalCode: "400050",
+            addressLocality: "Surat",
+            postalCode: "395009",
             addressCountry: "IN",
           },
           medicalSpecialty: "PrimaryCare",
@@ -113,7 +113,7 @@ function Hero() {
             variants={fadeUp}
             className="max-w-xl text-lg leading-relaxed text-muted-foreground"
           >
-            {doctor.name} is a General Physician in Bandra West treating fever and infections,
+            {doctor.name} is a General Physician in Adajan treating fever and infections,
             diabetes, blood pressure and long-term health — with consultations long enough to
             actually understand what is going on.
           </motion.p>
@@ -160,7 +160,7 @@ function Hero() {
               className="w-full rounded-[2.5rem] object-cover shadow-lift"
             />
             <div className="absolute -bottom-6 -left-4 rounded-3xl border border-border/70 bg-card p-5 shadow-lift sm:-left-10">
-              <p className="font-display text-2xl font-semibold text-primary">14,000+</p>
+              <p className="font-display text-2xl font-semibold text-primary">1,500+</p>
               <p className="text-xs text-muted-foreground">patients cared for</p>
             </div>
             <div className="absolute -right-2 top-8 rounded-3xl border border-border/70 bg-card p-5 shadow-lift sm:-right-8">
@@ -275,7 +275,7 @@ function Testimonials() {
       <div className="container-page">
         <SectionTitle
           eyebrow="Patient stories"
-          title="Trusted by families across Mumbai"
+          title="Trusted by families across Surat"
           description="Real experiences from patients who have made Medira Clinic their first call."
         />
         <div className="mt-12">

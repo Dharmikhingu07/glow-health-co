@@ -10,9 +10,9 @@ import { clinic, doctor } from "@/data/doctor";
 import { milestones, values } from "@/data/content";
 import { fadeUp } from "@/utils/motion";
 
-const title = "About Medira Clinic — Unhurried Primary Care in Bandra West";
+const title = "About Medira Clinic — Unhurried Primary Care in Adajan";
 const description =
-  "Medira Clinic is a single-doctor primary care practice in Mumbai built around longer consultations, conservative treatment and clear explanations.";
+  "Medira Clinic is a single-doctor primary care practice in Surat built around longer consultations, conservative treatment and clear explanations.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -36,7 +36,7 @@ function AboutPage() {
             align="left"
             eyebrow="About the clinic"
             title="A neighbourhood clinic built around listening"
-            description={`${clinic.name} opened in Bandra West in 2019 with a deliberately small daily patient list. Fewer appointments means each one can run long enough to reach the actual problem — not just the symptom in front of us.`}
+            description={`${clinic.name} opened in Adajan in 2024 with a deliberately small daily patient list. Fewer appointments means each one can run long enough to reach the actual problem — not just the symptom in front of us.`}
           />
         </div>
       </section>
@@ -85,7 +85,7 @@ function AboutPage() {
         <div className="container-page">
           <SectionTitle
             eyebrow="Milestones"
-            title="Twelve years of primary care"
+            title="Our journey so far"
             description="A short timeline of the work behind the clinic."
           />
           <AnimatedSection as="div" className="mx-auto mt-12 max-w-3xl flex flex-col gap-4">

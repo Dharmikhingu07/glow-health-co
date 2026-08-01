@@ -40,7 +40,7 @@ export function Navbar() {
               {clinic.name}
             </span>
             <span className="block truncate text-xs text-muted-foreground">
-              General Physician · Mumbai
+              General Physician · Surat
             </span>
           </span>
         </Link>
